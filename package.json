@@ -1,0 +1,40 @@
+{
+  "name": "exkazuu-renovate-config",
+  "version": "1.0.0",
+  "description": "A renovate config for my repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exKAZUu/renovate-config.git"
+  },
+  "author": "Sakamoto, Kazunori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exKAZUu/renovate-config/issues"
+  },
+  "homepage": "https://github.com/exKAZUu/renovate-config#readme",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base"
+      ],
+      "automergeType": "branch-push",
+      "prCreation": "not-pending",
+      "rebaseStalePrs": true,
+      "semanticCommits": true,
+      "timezone": "Asia/Tokyo",
+      "dependencies": {
+        "automerge": false
+      },
+      "devDependencies": {
+        "automerge": true,
+        "major": {
+          "automerge": false
+        }
+      }
+    }
+  }
+}
