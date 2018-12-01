@@ -1,5 +1,5 @@
 {
-  "name": "exkazuu-renovate-config",
+  "name": "renovate-config-exkazuu",
   "version": "1.0.0",
   "description": "A renovate config for my repositories",
   "main": "index.js",
